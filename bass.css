@@ -1,0 +1,185 @@
+CTYPE html>
+<html>
+    <title>My Portifolio</title>
+    <link rel="stylesheet" href="port.css">
+    <body>
+        <div id="banner">
+        <div class="navbar">
+        <ul>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Portifolio">Portifolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#header">Home</a></li>
+        </ul>
+        <i class="menu"></i>
+        </div>
+        <div class="header">
+            <p>Front end designer</p>
+            <h1>Hi, i am <span>yabetse</span>,<br> i'm from Ethiopia</h1>
+        </div>
+        </div>
+        <!--------about------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="lewa.jpg" class="rb">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>wenfjgnfjbnbjfnbjdfnbjfknbjfbnfjbnjfbnfjbnfjbnjfnbfbjnfjb
+                            bnfjbnfjbnjfbnjfbnjfnbjfnbjfbnjfbnjfbnfjbnfjbnfjbjfbnjnbjnbnb
+                            bkfbmkfbmfkmmbkfmbkfmbbkmfbmbkfmbkfbmkfbmmbkbmkbmfkbmkfmbfmbkfb
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front-end</span><br>dsign web pages</li>
+                                <li><span>Python</span><br>dsign web pages</li>
+                                <li><span>Back-end</span><br>dsign web pages</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Front-end</span><br>dsign web pages</li>
+                                <li><span>Python</span><br>dsign web pages</li>
+                                <li><span>Back-end</span><br>dsign web pages</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul id="sidemenu">
+                                <li><span>Front-end</span><br>dsign web pages</li>
+                                <li><span>Python</span><br>dsign web pages</li>
+                                <li><span>Back-end</span><br>dsign web pages</li>
+                                <i class="" onclick="closemenu()"></i>
+                            </ul>
+                            <i class="" onclick=openmenu()></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>web design</h2>
+                        <p>desgning everything i see on my area</p>
+                        <a href="">learn more</a>
+                    </div>
+                    <div>
+                        <h2>web design</h2>
+                        <p>desgning everything i see on my area</p>
+                        <a href="">learn more</a>
+                    </div>
+                    <div>
+                        <h2>web design</h2>
+                        <p>desgning everything i see on my area</p>
+                        <a href="">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Portifolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="lewa.jpg">
+                        <div class="layer">
+                            <h3>Python Model</h3>
+                            <p>mtmtmememememmememmemememe</p>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="lewa.jpg">
+                        <div class="layer">
+                            <h3>Python Model</h3>
+                            <p>mttmmt e  r r r  r rrrrrrrrr rjrjrjrjrjrj</p>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                <div class="work">
+                    <img src="lewa.jpg">
+                    <div class="layer">
+                        <h3>Python Model</h3>
+                    <p>mtmtmtm mtmtmtmtmmtm mttmtmm</p>
+                    <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p>Email@example.com</p>
+                        <p>0945929642</p>
+                        <div class="social-icons">
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <a href="" download class="btn btn2">Download Cv</a>
+                    </div>
+                    <form class="contact-right" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                <div class="copyright">
+                    <p>copyright @ yabetse. made beautifully<i></i> by yabetse</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.color = "0";
+            }
+            function closemenu(){
+                sidemenu.style.color = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxdQMJsQ7wevtEi5OhPSwo5Jr6_r1VQQIAmqno4f8mL4yjULkGxwqjpwSjNDkpqY3U/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
+
